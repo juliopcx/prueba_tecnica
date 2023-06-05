@@ -13,7 +13,11 @@ import PasswordRecovery from './passwordRecovery.vue';
 export default {
    components:{ Login, PasswordRecovery },
    setup() {
-    
+    onMounted( () => {
+
+      alert('alerta de entrada');
+
+    });    
 
     const currentComponent = ref('Login');
     const showRecovery = ref(false);
