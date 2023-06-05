@@ -14,9 +14,7 @@ export default {
    components:{ Login, PasswordRecovery },
    setup() {
     onMounted( () => {
-
       alert('alerta de entrada');
-
     });    
 
     const currentComponent = ref('Login');
