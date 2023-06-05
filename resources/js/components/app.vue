@@ -2,7 +2,6 @@
 <div id="app">
     <Login v-if="currentComponent === 'Login'" @login-success="handleLoginSuccess($event)" @show-recovery="handleShowRecovery" />
     <PasswordRecovery v-if="currentComponent === 'PasswordRecovery'" @cancel-recovery="handleCancelRecovery" @recovery-password-success="recoveryPasswordSuccess($event)" />
-      
   </div>
 </template>
 
@@ -14,6 +13,8 @@ import PasswordRecovery from './passwordRecovery.vue';
 export default {
    components:{ Login, PasswordRecovery },
    setup() {
+    
+
     const currentComponent = ref('Login');
     const showRecovery = ref(false);
     const message      = ref('');
